@@ -7,12 +7,12 @@ interface Props {
 
 const RepoCard: React.FC<Props> = ({ repo }) => {
   return (
-    <div className=" w-full border p-4 rounded-md shadow hover:shadow-lg transition">
+    <div className=" w-full border p-4 rounded-md shadow  hover:shadow-blue-glow transition">
       <a
         href={repo.html_url}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-xl font-bold text-blue-600"
+        className="text-xl font-bold text-white-600"
       >
         {repo.name}
       </a>

@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
       colors:{
-        'custom-blue': '#0d1b2a', // example dark navy blue
+        'custom-blue': '#090C0E', // example dark navy blue
+      },
+      boxShadow: {
+        'blue-glow': '0 4px 20px rgba(59, 130, 246, 0.5)', // Tailwind blue-500
       }
     },
   },

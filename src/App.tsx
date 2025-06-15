@@ -32,7 +32,9 @@ function App() {
   return (
     <div className="w-full min-h-screen bg-custom-blue text-white p-6">
       <div className="max-w-xl mx-auto">
-        <h1 className="text-2xl font-bold mb-4">GitHub Repo Explorer</h1>
+        <h1 className="text-4xl text-center p-10 font-bold mb-4">
+          GitHub Repo Explorer
+        </h1>
 
         <div className="flex gap-2 mb-4">
           <input
@@ -40,8 +42,9 @@ function App() {
             placeholder="Enter GitHub username"
             value={userName}
             onChange={(e) => setUserName(e.target.value)}
-            className="flex-1 px-4 py-2 border rounded text-black"
+            className="flex-1 px-4 py-2 rounded text-black border border-gray-300 focus:outline-none focus:ring-2 focus:blue-700"
           />
+
           <button
             onClick={fetchRepos}
             className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
